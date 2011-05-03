@@ -1,0 +1,137 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+  
+    <title>SV Ruby Club Docs: The SV Ruby Club Docs</title>
+    <meta http-equiv="expires" content="0">
+
+    <!--[if IE]>
+	  <script src="/javascripts/html5shiv"></script>
+    <![endif]-->
+    
+	<link rel="stylesheet" href="/css/application.css" type="text/css" charset="utf-8" />
+    
+    <!--[if IE]>
+	  <link rel="stylesheet" href="/css/ie.css" type="text/css" charset="utf-8" />
+    <![endif]-->
+    
+    <!--[if lte IE 7]>
+	  <link rel="stylesheet" href="/css/ie7.css" type="text/css" charset="utf-8" />
+    <![endif]-->
+
+    <script src="http://use.typekit.com/cra4agv.js"></script>
+    <script>try{Typekit.load();}catch(e){}</script>
+  </head>
+  <body>
+    <div class="container">
+    <header>
+    </header>
+
+    <div id="content">
+      <div class="wrapper">
+        <nav id="sidebar">
+          
+        </nav>
+        <section>                               
+          <h1>The SV Ruby Club Docs</h1>
+
+<p>This repo holds all the content (and other bits) for the Silicon Valley Ruby Club documentation, located at <a href="http://achievements.svruby.com/" title="SV Ruby Club Achievements">SV Ruby Achievements</a>.</p>
+
+<p>Documentation of the SV Ruby Club is written in the tense of Achievements rather than Process. For example, it is an Achievement to <a href="http://docs.svruby.com/run-club-meetup.html">Run a club meetup</a>. The description of this Achievement includes the Process for running a club as a template. The documentation of our club is written from the perspective but it is more important that someone did "Run a club meetup" than how it was run.</p>
+
+<p>Participation and progress are more important than Process and Policy.</p>
+
+<p>As each member performs Achievements, they in turn receive Awards/Badges. Each Award they receive represents personal improvement and progressive achievement.</p>
+
+<h2>Background to Documentation</h2>
+
+<p>The inspiration of this method of documentation came from the awesome guys at <a href="http://basho.com" title="Basho">Basho</a> who have the <a href="http://wiki.basho.com" title="Basho Wiki">Basho Wiki</a> setup with Gollum. It was also inspired by <a href="http://docs.engineyard.com" title="EY Docs">Engine Yard's Docs</a> which Dr Nic was involved with.</p>
+
+<p>We are using <a href="https://github.com/github/gollum" title="Gollum Repo">Gollum</a> and <a href="https://github.com/dreverri/gollum-site" title="Gollum-Site Repo">Gollum-Site</a> to generate the documentation. Gollum is a great piece of open source software released by the GitHub team that lets you maintain and build wikis from the contents of a Git repo.</p>
+
+<p><code>gollum-site</code> generates html from pages written in any format supported by Gollum (ASCIIDoc, Creole, Markdown, Textile, etc.).</p>
+
+<p><a name="contrib" id="contrib"></a></p>
+
+<h2>How to Contribute</h2>
+
+<p>Part of the reason we switched to Gollum and GitHub for the SV Ruby docs was to make it easier for people to contribute. Just treat it like a code repo: If you have anything to change or add, simply:</p>
+
+<ol><li><p><a href="http://help.github.com/forking/" title="Github Forking Guide">Fork this repo</a></p></li>
+<li><p><a href="#build" title="Building the Wiki">Build a local copy</a></p></li>
+<li><p>Create a new Branch:</p>
+
+<pre><code> git checkout -b &lt;branch-name&gt;
+</code></pre></li>
+<li><p>Add your changes</p></li>
+<li><p>Commit changes to your branch</p></li>
+<li><p><a href="http://help.github.com/pull-requests/" title="Github Pull-Requests Guide">Send us a pull request</a></p></li>
+</ol><p>If it's a small or obvious change, we're likely to merge it right away.  If we have questions, we'll communicate with you using the pull request's issue page.</p>
+
+<p>The <a href="https://github.com/github/gollum/blob/master/README.md" title="Gollum README">Gollum README</a> provides a great introduction to using the wiki system.</p>
+
+<p><a name="build" id="build"></a></p>
+
+<h2>Building the Docs Locally</h2>
+
+<p>If you want to build and view the EY Docs locally, here is what you need to do:</p>
+
+<ol><li><p>Clone this repo:</p>
+
+<pre><code> git clone git://github.com/svruby/svruby-docs.git
+</code></pre></li>
+<li><p>Ensure that you have <a href="https://github.com/carlhuda/bundler/" title="Bundler">Bundler</a> installed:</p>
+
+<pre><code> gem install bundler
+</code></pre></li>
+<li><p>Install all pre-requisite gems:</p>
+
+<pre><code> bundle install
+</code></pre></li>
+<li><p>Generate the site and start a local server (This will take a minute. Don't fret.)</p>
+
+<pre><code> gollum-site generate   # Will generate the files
+ gollum-site serve      # Will start the gollum-site server
+</code></pre></li>
+<li><p>Navigate to <a href="http://localhost:8000/Home.html">http://localhost:8000/Home.html</a> (Default) to access a fully-functional copy of the EY Docs.</p></li>
+</ol><h2>Sanitization</h2>
+
+<p>You can customize sanitization with three options:</p>
+
+<ul><li>--allow_elements: custom elements allowed, comma separated</li>
+<li>--allow_attributes: custom attributes allowed, comma separated</li>
+<li><p>--allow_protocols: custom protocols in <em>href</em> allowed, comma separated</p>
+
+<pre><code> `$ gollum-site generate --allow_elements embed,object --allow_attributes src --allow_protocols irc`
+</code></pre></li>
+</ul><p><a name="feedback" id="feedback"></a></p>
+
+<h2>Issues, Questions, Comments, Etc.</h2>
+
+<ul><li>Create a new [Issue][issues]</li>
+</ul><h2>EY Staff How to Deploy Changes</h2>
+
+<ul><li>When deploying changes from the CLI make sure to pass the no-migration option <code>ey deploy --no-migrate</code>.</li>
+<li>When deploying changes from the Web UI make sure that the checkbox next to Migrations is unchecked.</li>
+</ul>
+        </section>
+        <div class="clear"></div>
+      </div>  
+    </div>            
+
+    <div class="clear"></div> 
+
+      <div id="footer">
+        <div id="footer-content">
+          <div class="page">
+          </div>
+        </div>
+      </div>           
+    </div>
+
+    <div class="hidden">
+	  <script src="/js/application.min.js"></script>
+	  <script src="/js/plugins.js"></script>
+    </div>
+  </body>
+</html>
