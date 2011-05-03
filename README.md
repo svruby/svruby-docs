@@ -1,8 +1,16 @@
-# The Engine Yard Docs
+# The SV Ruby Club Docs
 
-This repo holds all the content (and other bits) for the Engine Yard docs, located at [EY Docs][ey-docs].
+This repo holds all the content (and other bits) for the Silicon Valley Ruby Club documentation, located at [SV Ruby Achievements][svruby-achievements].
 
-The inspiration of this method of documentation came from the awesome guys at [Basho][basho] who have the [Basho Wiki][basho-wiki] setup with Gollum.
+Documentation of the SV Ruby Club is written in the tense of Achievements rather than Process. For example, it is an Achievement to [Run a club meetup][doc-run-club-meetup]. The description of this Achievement includes the Process for running a club as a template. The documentation of our club is written from the perspective but it is more important that someone did "Run a club meetup" than how it was run.
+
+Participation and progress are more important than Process and Policy.
+
+As each member performs Achievements, they in turn receive Awards/Badges. Each Award they receive represents personal improvement and progressive achievement.
+
+## Background to Documentation
+
+The inspiration of this method of documentation came from the awesome guys at [Basho][basho] who have the [Basho Wiki][basho-wiki] setup with Gollum. It was also inspired by [Engine Yard's Docs][ey-docs] which Dr Nic was involved with.
 
 We are using [Gollum][gollum] and [Gollum-Site][gol-site] to generate the documentation. Gollum is a great piece of open source software released by the GitHub team that lets you maintain and build wikis from the contents of a Git repo.
 
@@ -11,7 +19,7 @@ We are using [Gollum][gollum] and [Gollum-Site][gol-site] to generate the docume
 <A name="contrib">
 ## How to Contribute
 
-Part of the reason we switched to Gollum and GitHub for the EY Docs was to make it easier for people to contribute. Just treat it like a code repo: If you have anything to change or add, simply:
+Part of the reason we switched to Gollum and GitHub for the SV Ruby docs was to make it easier for people to contribute. Just treat it like a code repo: If you have anything to change or add, simply:
 
 1. [Fork this repo][forking]
 
@@ -38,7 +46,7 @@ If you want to build and view the EY Docs locally, here is what you need to do:
 
 1. Clone this repo:
 
-        git clone git://github.com/engineyard/ey-docs.git
+        git clone git://github.com/svruby/svruby-docs.git
 
 2. Ensure that you have [Bundler][bundler] installed:
 
@@ -75,7 +83,9 @@ You can customize sanitization with three options:
 * When deploying changes from the CLI make sure to pass the no-migration option `ey deploy --no-migrate`.
 * When deploying changes from the Web UI make sure that the checkbox next to Migrations is unchecked.
 
-[issues]:     https://github.com/engineyard/ey-docs/issues "EY-Docs Issues Page"
+[svruby-achievements]:     http://achievements.svruby.com/ "SV Ruby Club Achievements"
+[ey-docs]:    http://docs.engineyard.com "EY Docs"
+[doc-run-club-meetup]: http://docs.svruby.com/run-club-meetup.html
 [forking]:    http://help.github.com/forking/ "Github Forking Guide"
 [pull-req]:   http://help.github.com/pull-requests/ "Github Pull-Requests Guide"
 [build]:      #build "Building the Wiki"
@@ -85,4 +95,3 @@ You can customize sanitization with three options:
 [gol-site]:   https://github.com/dreverri/gollum-site "Gollum-Site Repo"
 [basho-wiki]: http://wiki.basho.com "Basho Wiki"
 [basho]:      http://basho.com "Basho"
-[ey-docs]:    http://docs.engineyard.com "EY Docs"
