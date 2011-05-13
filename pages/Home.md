@@ -6,7 +6,7 @@ We primarily meetup at Carnegie Mellon University campus in Silicon Valley/Mount
 
 The SV Ruby Club has 10 officer roles. The officer team also meets twice a month because we love our club and love progressive improvement.
 
-We "run" our club via achievements rather than process or rules. Members and guests are rewarded for participation and improvement. Examples of club achievements are [[First visit|first-visit]] for new guests, [[Share something shiny||share-something-shiny]] for showing off something new, and [[Run a club event]] for leading a club event and ensuring everyone has a fabulous time.
+We "run" our club via achievements rather than process or rules. Members and guests are rewarded for participation and improvement. Examples of club achievements are [[First Visit|achieve-first-visit]] for new guests, [[Share Something Shiny|achieve-share-something-shiny]] for showing off something new, and [[Host a Club Event|achieve-host-a-club-event]] for leading a club event and ensuring everyone has a fabulous time.
 
 There is no wrong way for our club to exist. Yet we each want something from the club - to learn about Ruby and programming, to have companionship, to have leadership, to have purpose, and above all to know that participating in the club was more valuable than any alternative like watching TV or playing World of Warcraft.
 
@@ -18,7 +18,7 @@ More importantly, the club will be well-worth joining, enjoying and sharing.
 
 ## About the Documentation
 
-Documentation of the SV Ruby Club is written in the tense of Achievements rather than Process. For example, it is an Achievement to [Run a club meetup][doc-run-club-meetup]. The description of this Achievement includes the Process for running a club as a template. The documentation of our club is written from the perspective but it is more important that someone did "Run a club meetup" than how it was run.
+Documentation of the SV Ruby Club is written in the tense of Achievements rather than Process. For example, it is an Achievement to [[Host a Club Event|achieve-host-a-club-event]]. The description of this Achievement includes the Process for running a club as a template. The documentation of our club is written from the perspective but it is more important that someone did "Run a club meetup" than how it was run.
 
 Participation and progress are more important than Process and Policy.
 
