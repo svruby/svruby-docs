@@ -1,39 +1,39 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
+
 <html>
   <head>
-  
-    <title>SV Ruby Club Docs: The SV Ruby Club Docs</title>
-    <meta http-equiv="expires" content="0">
-
-    <!--[if IE]>
-	  <script src="/javascripts/html5shiv"></script>
-    <![endif]-->
-    
-	<link rel="stylesheet" href="/css/application.css" type="text/css" charset="utf-8" />
-    
-    <!--[if IE]>
-	  <link rel="stylesheet" href="/css/ie.css" type="text/css" charset="utf-8" />
-    <![endif]-->
-    
-    <!--[if lte IE 7]>
-	  <link rel="stylesheet" href="/css/ie7.css" type="text/css" charset="utf-8" />
-    <![endif]-->
-
-    <script src="http://use.typekit.com/cra4agv.js"></script>
-    <script>try{Typekit.load();}catch(e){}</script>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>The SV Ruby Club Docs</title>
+    <link rel="stylesheet" href="/css/screen.css" type="text/css" charset="utf-8" />
+    <link rel="stylesheet" href="/css/gollum.css" type="text/css" charset="utf-8" />
+    <link rel="stylesheet" href="/css/syntax.css" type="text/css" charset="utf-8" />
+    <script src="/javascript/jquery-1.4.2.min.js" type="text/javascript"></script>
+    <script src="/javascript/jquery.text_selection-1.0.0.min.js" type="text/javascript"></script>
+    <script src="/javascript/jquery.previewable_comment_form.js" type="text/javascript"></script>
+    <script src="/javascript/jquery.tabs.js" type="text/javascript"></script>
+    <script src="/javascript/gollum.js" type="text/javascript"></script>
+    <script src="/javascript/MathJax/MathJax.js" type="text/javascript">
+      MathJax.OutputJax.fontDir = "http://github-assets.s3.amazonaws.com/javascripts/MathJax/fonts"
+      MathJax.Hub.Config({
+      jax: ["input/TeX", "output/HTML-CSS"]
+      })
+    </script>
   </head>
-  <body>
-    <div class="container">
-    <header>
-    </header>
 
-    <div id="content">
-      <div class="wrapper">
-        <nav id="sidebar">
-          
-        </nav>
-        <section>                               
-          <h1>The SV Ruby Club Docs</h1>
+  <body>
+    <div id="main">
+      <div class="site">
+        <div id="guides">
+          <div class="guide">
+            <div class="main">
+              <div class="actions">
+                <div>
+                  <a href="/Home.html">Home</a>
+                </div>
+              </div>
+              <h1>The SV Ruby Club Docs</h1>
+              <div class="content wikistyle gollum markdown">
+                <h1>The SV Ruby Club Docs</h1>
 
 <p>This repo holds all the content (and other bits) for the Silicon Valley Ruby Club documentation, located at <a href="http://achievements.svruby.com/" title="SV Ruby Club Achievements">SV Ruby Achievements</a>.</p>
 
@@ -74,7 +74,7 @@
 
 <h2>Building the Docs Locally</h2>
 
-<p>If you want to build and view the EY Docs locally, here is what you need to do:</p>
+<p>If you want to build and view the Docs locally, here is what you need to do:</p>
 
 <ol><li><p>Clone this repo:</p>
 
@@ -90,10 +90,10 @@
 </code></pre></li>
 <li><p>Generate the site and start a local server (This will take a minute. Don't fret.)</p>
 
-<pre><code> gollum-site generate   # Will generate the files
- gollum-site serve      # Will start the gollum-site server
+<pre><code> rake generate   # Will generate the files
+ rake serve      # Will start the gollum-site server
 </code></pre></li>
-<li><p>Navigate to <a href="http://localhost:8000/Home.html">http://localhost:8000/Home.html</a> (Default) to access a fully-functional copy of the EY Docs.</p></li>
+<li><p>Navigate to <a href="http://localhost:3011/Home.html">http://localhost:3011/Home.html</a> (Default) to access a fully-functional copy of the SVRuby Docs.</p></li>
 </ol><h2>Sanitization</h2>
 
 <p>You can customize sanitization with three options:</p>
@@ -109,29 +109,17 @@
 <h2>Issues, Questions, Comments, Etc.</h2>
 
 <ul><li>Create a new [Issue][issues]</li>
-</ul><h2>EY Staff How to Deploy Changes</h2>
-
-<ul><li>When deploying changes from the CLI make sure to pass the no-migration option <code>ey deploy --no-migrate</code>.</li>
-<li>When deploying changes from the Web UI make sure that the checkbox next to Migrations is unchecked.</li>
 </ul>
-        </section>
-        <div class="clear"></div>
-      </div>  
-    </div>            
-
-    <div class="clear"></div> 
-
-      <div id="footer">
-        <div id="footer-content">
-          <div class="page">
+              </div>
+            </div>
+          </div>
+          <div class="admin">
+            <div style="float: left;">
+              <small>Last edited by <b>Dr Nic Williams</b>, 2011-05-12 18:36:27</small>
+            </div>
           </div>
         </div>
-      </div>           
-    </div>
-
-    <div class="hidden">
-	  <script src="/js/application.min.js"></script>
-	  <script src="/js/plugins.js"></script>
+      </div>
     </div>
   </body>
 </html>
